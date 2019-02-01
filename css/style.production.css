@@ -169,6 +169,10 @@ button {
 
 /* CSS grid styling */
 
+.grid-section {
+  padding: 0 1em;
+}
+
 .grid {
   display: -ms-grid;
   display: grid;
