@@ -8,7 +8,7 @@ Primary blue: #266EE1
 
 :root {
   /* Colors */
-  --primary-color: #266EE1;
+  --primary-color: #266ee1;
   --light-blue: #d1ebff;
   --light-blue-2: #b0cdfa;
   --super-light-blue: #f7fbff;
@@ -20,9 +20,10 @@ Primary blue: #266EE1
   --sun-color-1: #edc655;
   --sun-color-2: #fcffad;
   --sun-color-3: #f76414;
-  --button-font-color: #ffffff;
+  --button-font-color: #fff;
   --button-border-bottom: rgba(38, 38, 224, 0.3);
-  --page-header-border-bottom-color: #D3D3D3;
+  --page-header-border-bottom-color: #d3d3d3;
+
   /* Font styles */
   --font-standard: 16px;
   --font-sans-serif-family: "Lato", sans-serif;
@@ -49,10 +50,10 @@ h1 {
 
 a {
   color: var(--primary-color);
-    /* CSS transition */
+
+  /* CSS transition */
   transition: 0.2s opacity;
 }
-
 
 .contact-info {
   text-align: center;
@@ -66,7 +67,8 @@ a:visited {
   color: var(--visited-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* no underlining when hovering over link */
   text-decoration: none;
 }
@@ -75,7 +77,8 @@ a:active {
   color: var(--active-color);
 }
 
-.button, button {
+.button,
+button {
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -84,12 +87,16 @@ a:active {
   color: var(--button-font-color);
   text-decoration: none;
   padding: 10px;
+
   /* rounded corners */
   border-radius: 5px;
   border-bottom: 2px solid var(--button-border-bottom);
 }
 
-.button:hover, .button:focus, button:hover, button:focus {
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -154,7 +161,6 @@ a:active {
   border-radius: 50%;
 }
 
-
 /* Grid fallbacks */
 
 .grid__item {
@@ -190,7 +196,6 @@ a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .page-footer__item {
@@ -207,15 +212,18 @@ a:active {
   0% {
     fill: var(--sun-color-1);
   }
+
   50% {
     fill: var(--sun-color-2);
   }
+
   100% {
     fill: var(--sun-color-3);
   }
 }
 
-.sun, #path18 {
+.sun,
+#path18 {
   animation: 8s color-change infinite alternate linear;
 }
 
@@ -223,6 +231,7 @@ a:active {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(500px, 50px);
   }
@@ -236,6 +245,7 @@ a:active {
   from {
     transform: translate(346px, 48px);
   }
+
   to {
     transform: translate(0, 48px);
   }
@@ -252,21 +262,26 @@ a:active {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   .page-header__logo {
     width: 100px;
     height: auto;
   }
+
   svg {
     max-width: 95%;
     height: 400px;
   }
+
   .page-header__logo {
     max-width: 50%;
   }
+
   .profile__portrait {
     margin-right: 20px;
     max-width: 55%;
@@ -278,13 +293,16 @@ a:active {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 24px;
   }
+
   .page-footer-special {
     padding-top: 2.5em;
   }
