@@ -8,6 +8,7 @@ Primary blue: #266EE1
 
 :root {
   /* Colors */
+
   /* Font styles */
 }
 
@@ -30,12 +31,12 @@ h1 {
 }
 
 a {
-  color: #266EE1;
-    /* CSS transition */
+  color: #266ee1;
+
+  /* CSS transition */
   -webkit-transition: 0.2s opacity;
   transition: 0.2s opacity;
 }
-
 
 .contact-info {
   text-align: center;
@@ -49,7 +50,8 @@ a:visited {
   color: #2626e0;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* no underlining when hovering over link */
   text-decoration: none;
 }
@@ -62,11 +64,12 @@ a:active {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #266EE1;
+  background-color: #266ee1;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
+
   /* rounded corners */
   border-radius: 5px;
   border-bottom: 2px solid rgba(38, 38, 224, 0.3);
@@ -76,17 +79,21 @@ button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #266EE1;
+  background-color: #266ee1;
   font-size: 16px;
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
+
   /* rounded corners */
   border-radius: 5px;
   border-bottom: 2px solid rgba(38, 38, 224, 0.3);
 }
 
-.button:hover, .button:focus, button:hover, button:focus {
+.button:hover,
+.button:focus,
+button:hover,
+button:focus {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -110,7 +117,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
-  border-bottom: 1px solid #D3D3D3;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .page-header__item {
@@ -148,7 +155,7 @@ button {
   max-width: 700px;
   margin: 5em auto;
   position: relative;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 .profile__portrait {
@@ -158,7 +165,6 @@ button {
   margin-right: 40px;
   border-radius: 50%;
 }
-
 
 /* Grid fallbacks */
 
@@ -204,7 +210,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-
+  overflow: hidden;
 }
 
 .page-footer__item {
@@ -223,9 +229,11 @@ button {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -235,15 +243,18 @@ button {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
 }
 
-.sun, #path18 {
+.sun,
+#path18 {
   -webkit-animation: 8s color-change infinite alternate linear;
           animation: 8s color-change infinite alternate linear;
 }
@@ -253,6 +264,7 @@ button {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(500px, 50px);
             transform: translate(500px, 50px);
@@ -264,6 +276,7 @@ button {
     -webkit-transform: translate(0, 50px);
             transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(500px, 50px);
             transform: translate(500px, 50px);
@@ -280,6 +293,7 @@ button {
     -webkit-transform: translate(346px, 48px);
             transform: translate(346px, 48px);
   }
+
   to {
     -webkit-transform: translate(0, 48px);
             transform: translate(0, 48px);
@@ -291,6 +305,7 @@ button {
     -webkit-transform: translate(346px, 48px);
             transform: translate(346px, 48px);
   }
+
   to {
     -webkit-transform: translate(0, 48px);
             transform: translate(0, 48px);
@@ -310,21 +325,26 @@ button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   .page-header__logo {
     width: 100px;
     height: auto;
   }
+
   svg {
     max-width: 95%;
     height: 400px;
   }
+
   .page-header__logo {
     max-width: 50%;
   }
+
   .profile__portrait {
     margin-right: 20px;
     max-width: 55%;
@@ -332,19 +352,27 @@ button {
 }
 
 @media all and (max-width: 500px) {
+  .profile {
+    padding: 0 0.5em;
+    margin: 3em auto;
+  }
+
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 24px;
   }
+
   .page-footer-special {
-    padding-top: 2.5em;
+    padding-top: 0;
   }
 }
