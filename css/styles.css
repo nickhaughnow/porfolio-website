@@ -150,7 +150,7 @@ button:focus {
   max-width: 700px;
   margin: 5em auto;
   position: relative;
-  padding: 0 1em;
+  padding: 0 0.5em;
 }
 
 .profile__portrait {
@@ -196,6 +196,7 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .page-footer__item {
@@ -289,6 +290,11 @@ button:focus {
 }
 
 @media all and (max-width: 500px) {
+  .profile {
+    padding: 0 0.5em;
+    margin: 3em auto;
+  }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 10px;
@@ -304,6 +310,6 @@ button:focus {
   }
 
   .page-footer-special {
-    padding-top: 2.5em;
+    padding-top: 0;
   }
 }
